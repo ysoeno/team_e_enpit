@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+- 2.1.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: WwlCFQcO9BHXzboE//Yjfsmy00Q72naPrcgC7hs2pjet0OHXq9MhkWxoNgy59b4tc4Q1uSS32i//X+D7dbzfhQNJa4p6m4o3NM+7cMfPQU2gZ8OccMpBygkghVavmhj+tXpXLSFnE5zH5E1EYMTNfK7Z6A343UZmSUFhumFPa3k=
+  app: afternoon-brushlands-7525
+  on:
+    repo: Kj-sakai/team_e_enpit
+addons:
+ postgresql: "9.3"
+before_script:
+ - psql -c 'create database travis_ci_test;' -U postgres
+ - cp config/database.yml.travis config/database.yml
