@@ -54,6 +54,24 @@ padding: 10px 0;
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at,  odio. Donec et ipsum et sapien vehicula nonummy. Suspendisse potenti. Fusce  varius urna id quam. Sed neque mi, varius eget, tincidunt nec, suscipit id,  libero. In eget purus. Vestibulum ut nisl. Donec eu mi sed turpis feugiat  feugiat. Integer turpis arcu, pellentesque eget, cursus et, fermentum ut,  sapien. Fusce metus mi, eleifend sollicitudin, molestie id, varius et, nibh.  Donec nec libero.</p><br/>
 <h2>H2 レベルの見出し </h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at, odio.</p>
+
+<div class="starter-template">
+  <h1>30代男性 のランキングTOP 30  動作テスト</h1>
+    <table class="table table-hover">
+      <tr>
+        <th>商品名</th>
+        <th>値段</th>
+      </tr>
+      <% @rankings.each do |ranking| %>            
+      <tr>            
+        <td><%= ranking.name %></td>
+        <td><%= ranking.price %></td>
+      </tr>
+      <% end %>                    
+    </table>          
+</div>
+
+
     <!-- end #mainContent --></div>
   <div id="footer">
 <p>2014 enpit</p>
